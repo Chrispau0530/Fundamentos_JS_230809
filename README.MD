@@ -16,7 +16,7 @@ de confirmar los conocimientos de logica de programacion
 |4.|Ejercicio 02: Tipos de datos en JS|10|✔️Finalizada|
 |5.|Ejercicio 03: Repaso de objetos en JS|19|✔️Finalizada|
 |6.|Ejercicio 04: Repaso de arreglos en JS|18|✔️Finalizada|
-|7.|Ejercicio 05: Repaso de ciclos en JS| PENDIENTE | Activa|
+|7.|Ejercicio 05: Repaso de ciclos en JS| PENDIENTE |✔️ Finalizada|
 
 
 
