@@ -135,3 +135,55 @@ console.log("Y tambien agregamos el numero -13235343423235435445.232454543421223
 arregloMixto.push(BigInt(-13235343423235435445.23245454342122323))
 console.log("Despues de estados operaciones el arreglo queda con los siguientes elementos ")
 console.table(arregloMixto)
+console.log("%c6.-Agregar un nuevo elemento o un arreglo (UNSHIFT) en la posicion inicial",style_console)
+console.table(estudiantes)
+console.log("Ahora agregamos a Abishai Flores , al comienzo del arreglo")
+estudiantes.unshift("Abishai Flores ");
+console.log("La lista actual es:")
+console.table(estudiantes)
+console.log("%c7.-Eliminar elementosn de un arreglo en la ultima posicion (POP)",style_console)
+console.log("El arreglo tiene los siguientes elementos ")
+console.table(estudiantes)
+console.log("Para este caso elininaremos a Abril Guzman , en la ultima posicion")
+estudiantes.pop();
+console.log("Despues de eliminar el elemento el arreglo quedo de la siguiente manera ")
+console.table(estudiantes)
+
+console.log("%c8.-Eliminar elementosn de un arreglo en la primera posicion (SHIFT)",style_console)
+console.log("El arreglo tiene los siguientes elementos")
+console.table(estudiantes)
+console.log("Para este caso elininaremos a Abishai Folores, en la ultima posicion")
+estudiantes.shift();
+console.log("Despues de eliminar el elemento el arreglo quedo de la siguiente manera ")
+console.table(estudiantes)
+
+console.log("%c9.-Dividir un arreglo en un arreglo nuevo con posiciones definidas (SPLICE)",style_console)
+console.log("El arreglo original tiene los siguientes elementos ")
+console.table(estudiantes)
+console.log("Dividir el arreglo en uno nuevo eliminado ciertos elementos en base a du posicion ")
+//Cuando la funcion rsplice recibe un solo parametro eliminara los elementos de esa posicion en adelante 
+estudiantes.splice(2)
+console.table(estudiantes)
+
+//Cuando la fusion splice recibe 2 parametros se elimina todos los elementos que no esten en ese rango
+estudiantes.push("Zyanya Zacatengo","Tania Ibarra","Juvenal Viveros","Marcos Rios","Jonathan Baldemar ")
+console.log("Se han agregado nuevos estudiantes , por lo que el arreglo es :")
+console.table(estudiantes)
+console.log("Ahpra ya tenemos los elementos suficientes para aplicar el metodo de splice con dos parametros que sean 3,5")
+estudiantes.splice(3,5)
+console.log("El resultado fue :")
+console.table(estudiantes)
+
+//Splice sirve tambien para insertar elementos en posiciones especificos , ahora  necesitamos insertar a "Antonio Ocpaco" entre "Christian " y "Alisson"
+
+console.log("Ahora vamos a insertar \"Antonio Ocpaco\" en medio de Christian y alisson")
+estudiantes.splice(1,0,"Antonio Ocpaco")
+console.log("Resultado en ")
+console.table(estudiantes)
+
+//Tambien splice sirve para remplazar elementos por otros , en este caso remplazaremos Antonio Ocpaco  por Brandom Leon
+
+console.log("Ahora vamos a remplazar \"Brandom Leon\" en medio de Christian y alisson")
+estudiantes.splice(0,1,"Brandom Leon")
+console.log("Resultado en ")
+console.table(estudiantes)
