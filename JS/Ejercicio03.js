@@ -265,3 +265,48 @@ console.log("%c2.- Variables Independientes ",style_console);
 // TOTAL FIRMAS PRACTICAS: 25-20
 // AL 27 DE SEPTIEMBRE
 // Unión de Objetos usando SPREAD OPERATOR para evitar la perdida de información con objetos que comparten el mismo nombre en sus propiedades
+
+console.log("%c11.- Unión de Objetos usando el SPREAD OPERATION (...)", style_console);
+
+
+//Parchamos el error, reiniciando el valor del producto Id al original
+//Producto.ID=100;
+
+console.table(producto)
+console.table(Comprador)
+console.table(Pedido)
+
+const Venta2 = 
+{
+    producto: {...producto},
+    comprador:{...Comprador},
+    pedido:{...Pedido}
+}                 
+console.log("Fusionamos los 3 objetos en uno nuevo, sin perdida de información")
+console.log(Venta2)
+console.table(Venta2)
+
+
+
+
+console.log("%c12.- Mutabilidad POST Unión de Objetos", style_console);
+
+
+
+// Vamos a verificar el estatus de mutabilidad de los obetos
+console.log("Vamos a verificar el estatus de mutabilidad del objeto PEDIDO")
+console.log(`Esta el objeto de Pedido Congelado ? : ${Object.isFrozen(Pedido)}` );
+console.log(`Esta el objeto de Pedido Sellado? : ${Object.isSealed(Pedido)}` );
+
+console.log("Vamos a verificar el estatus de mutabilidad del objeto COMPRADOR")
+console.log(`Esta el objeto de Pedido Congelado ? : ${Object.isFrozen(Comprador)}` );
+console.log(`Esta el objeto de Pedido Sellado? : ${Object.isSealed(Comprador)}` );
+
+console.log("Vamos a verificar el estatus de mutabilidad del objeto PRODUCTO")
+console.log(`Esta el objeto de Pedido Congelado ? : ${Object.isFrozen(producto)}` );
+console.log(`Esta el objeto de Pedido Sellado? : ${Object.isSealed(producto)}` );
+
+// Modificamos la estructura de producto, agregando una nueva propiedad
+producto['isLegacy']=false;
+console.table(producto)
+console.log(Venta2);
