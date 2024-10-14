@@ -12,6 +12,7 @@ de confirmar los conocimientos de logica de programacion
 |--|--|--|--|
 |1.|Metodología de evaluación| 1|✔️Finalizada|
 |2.|Inicialización del proyecto de Fundamentos de JS|8|✔️Finalizada|
+|3.|Ejercicio 01: Declaración de variables en JS|6|✔️Finalizada|
 
 
 
