@@ -10,6 +10,8 @@ de confirmar los conocimientos de logica de programacion
 
 |NO.|Descripción|Potenciador|Estatus|
 |--|--|--|--|
+|1.|Metodología de evaluación| 1|✔️Finalizada|
+|2.|Inicialización del proyecto de Fundamentos de JS|8|✔️Finalizada|
 
 
 
