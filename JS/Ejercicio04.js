@@ -60,3 +60,78 @@ console.log(`El dato en la posicion[9] = ${arregloMixto[9]} y es del tipo: ${(ty
 console.log(`El dato en la posicion[10] = ${arregloMixto[10]} y es del tipo: ${(typeof(arregloMixto[10]))}`);
 console.log(`El dato en la posicion[11] = ${arregloMixto[11]} y es del tipo: ${(typeof(arregloMixto[11]))}`);
 console.log(`El dato en la posicion[12] = ${arregloMixto[12]} y es del tipo: ${(typeof(arregloMixto[12]))}`);
+console.log("%c3.- Arreglos Multidimencionales (Matrices)", style_console);
+
+console.log("Declarando una matriz regular.")
+//Una matriz es una estructura de datos multidensional (tabla) de n columnas o m filas
+
+let matriz = [[1,2,3,4],['a','b','c','d']]
+//esta es una matríz regular de 4 x 4
+
+console.log(matriz)
+console.table(matriz)
+
+console.log("Declarando una matriz irregular.")
+
+const matrizIrregular= [["Juan", "Pedro", "María", "Inés"],
+[true,false,null],
+[9.2]]
+
+console.log(matrizIrregular)
+console.table(matrizIrregular)
+
+// Accediendo a los valores de una matriz
+
+console.log("Leyendo las Propiedades de una Matriz Regular")
+console.log(`Elemento en la posicion [0][0]: ${matriz[0][0]}`)
+console.log(`Elemento en la posicion [1][2]: ${matriz[1][2]}`)
+
+
+// Accediendo a los valores de una matriz irregular
+console.log("Leyendo las Propiedades de una Matriz Irregular")
+console.log(`Elemento en la posicion [0][0]: ${matrizIrregular[0][0]}`)
+console.log(`Elemento en la posicion [2][0] (Promedio de Juan): ${matrizIrregular[2][0]}`)
+console.log(`Elemento en la posicion [1][2] (¿Es María mayor de edad?): ${matrizIrregular[1]
+[2]}`)
+
+
+// Funciones y Métodos de Arreglos
+// Los metodos de un objeto siempre son invocados usando un . y al termino se delimitan los parametros entre (), en caso de que no lleve (), no es un método sino una propiedad
+
+
+console.log("%c4.- Funciones o Métodos de los Arreglos (Array Methos or Array Functions", style_console);
+console.log("¿Como saber cual es el tamaño de un arrego?")
+console.log(`meses es un arreglo de tamaño: ${mesesAnio.length}`)
+console.log(`arregloMixto es un arreglo de tamaño: ${arregloMixto.length}`)
+console.log(`¿Qué pasa con los multidimensionales ?`)
+console.log(`matriz es un arreglo de tamaño: ${matriz.length}`)
+console.log("mmm, eso me da el tamaño de número de filas de la matriz, pero cómo saber el numero de columnas?")
+console.log(`la matriz regular tiene un número de ${matriz[0].length}`)
+console.log("Y para las irregulares?")
+// Para saber la dimensión de una matriz irregular podemos hacer el uso de ciclo
+let numeroFilas = matrizIrregular.length
+for (let i = 0;i<numeroFilas; i++)
+console.log(`La longitud de la fila ${[i]} es = ${matrizIrregular[i].length}`)
+
+console.log("%c5.- Agregar un nuevo elemento a un arreglo (PUSH) ",style_console);
+
+let estudiantes =["Christian Paul","Alisson Lizeth","Daniel Bravo","Aiton Artiaga"]
+console.log("Los elementos actuales del arreglo son: ")
+console.table(estudiantes)
+console.log("Agregamos a un nuevo estudiante llamado : Abril Guzman")
+estudiantes.push("Abril Guzman")
+console.log("Despues de agregarla los elementos del arreglo son : ")
+console.table(estudiantes)
+
+//EL elemento push agrega otra columna en la ultima posicion que se encuentra el arreglo 
+
+
+console.log("¿Que pasa con los Mixtos?")
+console.log("El arregloMixto actualmente tiene los siguientes elementos : ")
+console.table(arregloMixto)
+console.log("Agregamos la palabra : \"Hola\" , como nuevo elemento")
+arregloMixto.push("Hola");
+console.log("Y tambien agregamos el numero -13235343423235435445.23245454342122323, siendo este un tipo de BigInt")
+arregloMixto.push(BigInt(-13235343423235435445.23245454342122323))
+console.log("Despues de estados operaciones el arreglo queda con los siguientes elementos ")
+console.table(arregloMixto)
