@@ -10,7 +10,7 @@ de confirmar los conocimientos de logica de programacion
 
 |NO.|Descripción|Potenciador|Estatus|
 |--|--|--|--|
-|1.|Metodologia de evaluacion|1|✅Finalizada|
+
 
 
 ### Autor 
